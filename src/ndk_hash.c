@@ -19,7 +19,6 @@
     }
 
 
-#ifdef NDK_MD5
 
 void
 ndk_md5_hash (u_char *p, char *data, size_t len)
@@ -33,7 +32,6 @@ ndk_md5_hash_upper (u_char *p, char *data, size_t len)
     NDK_OPENSSL_HASH (MD5, MD5, 1);
 }
 
-#endif
 #ifdef NDK_SHA1
 
 void
