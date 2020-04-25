@@ -5,6 +5,8 @@
 
 #include    <ndk.h>
 
+#include    "hash/md5.h"
+#include    "hash/sha.h"
 #include    <ndk_config.c>
 
 
