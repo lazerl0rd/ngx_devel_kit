@@ -23,11 +23,9 @@
 typedef void (*ndk_hash_pt) (u_char *p, char *data, size_t len);
 
 
-#ifdef NDK_MD5
 #include <ngx_md5.h>
 void    ndk_md5_hash            (u_char *p, char *data, size_t len);
 void    ndk_md5_hash_upper      (u_char *p, char *data, size_t len);
-#endif
 
 #ifdef NDK_MURMUR2
 #define MURMURHASH2_DIGEST_LENGTH   4
